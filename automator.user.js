@@ -2,7 +2,7 @@
 // @name [ensingm2] Steam Monster Game Script
 // @namespace https://github.com/ensingm2/SteamMonsterGameScript
 // @description A Javascript automator for the 2015 Summer Steam Monster Minigame
-// @version 2.16
+// @version 2.17
 // @match http://steamcommunity.com/minigame/towerattack*
 // @match http://steamcommunity.com//minigame/towerattack*
 // @updateURL https://raw.githubusercontent.com/ensingm2/SteamMonsterGameScript/master/automator.user.js
@@ -429,6 +429,10 @@ function startAutoAbilityUser() {
 			// Pumped Up
 			if(getAbilityItemQuantity(19))
 				castAbility(19);
+			
+			// Treasure
+			if(getAbilityItemQuantity(22))
+				castAbility(22);
 		}
 		
 		// Abilities only used on targets
